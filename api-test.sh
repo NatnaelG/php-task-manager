@@ -3,10 +3,6 @@
 BASE_URL="http://localhost:8080"
 HEADER="Content-Type: application/json"
 
-echo "--- Waiting for the services to be ready... ---"
-# Give the containers some time to start up
-sleep 5
-
 # Find the container ID of the running app
 CONTAINER_ID=$(docker compose ps -q app)
 
