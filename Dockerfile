@@ -17,5 +17,5 @@ RUN docker-php-ext-install \
 # Copy the application code
 COPY . .
 
-# Expose port 80 (for Nginx)
-EXPOSE 80
+# Expose the FPM port
+EXPOSE 9000
